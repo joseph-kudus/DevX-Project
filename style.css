@@ -1,0 +1,1034 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: #000000;
+}
+body {
+    
+    background-color: white; /* Light purple background color */
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    display: block;
+}
+
+.header{
+    margin: 10px;
+    display:block;
+    padding: 5px;
+    
+
+}
+/* --- Navigation Bar --- */
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font: bold;
+    padding:  15px;
+    margin: auto;
+    background-color: #F8F3FD;
+    height: 80px;
+    
+   
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 34px;
+    color: #000000;
+    text-align: left;
+    line-height: 100%;
+    letter-spacing: 0px;
+    font-style: ExtraBold;
+    text-box-trim: trim-both;
+    width: 95px;
+    height: 24px;
+    top: 20px;
+    left: 153px;    
+    letter-spacing: 0%;
+}
+.nav-links, ul{
+    display: flex;
+    background-color: #F8F3FD;
+    letter-spacing: 0%;
+    height: 34px;
+    line-height: 24px;
+    font-weight: 500;
+    
+    font-size: 18px;  
+    font-weight: 500;
+    
+}
+ul{
+    
+    text-align: center;
+    justify-content: baseline;
+    text-justify: auto;
+    list-style-type:none;
+    gap: 10px;
+   
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    margin: 0 auto;
+    font-size: 18px;
+    padding: 0px;
+    position: relative;
+    letter-spacing: 0px;
+    line-height: 24px;
+}
+
+.auth-buttons a {
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 0.9rem;
+    gap: 24px;
+}
+
+.signin {
+    color: #4a5568;
+}
+
+.signup-btn {
+    background-color: #60269E; /* Button purple */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+
+.hero-section{
+    text-align: center;
+    padding: 120px;
+    margin: 0px;
+}
+.welcome-text{
+    background-color: #60269E;
+    border-radius: 16px;
+    border-width: 1px;
+    background: white;
+    border-color: #60269E;
+    font-family: PT sans-serif;
+    letter-spacing: 0%;
+    padding: 10px; 
+}
+.container h1 p{
+    font-size: 75px;
+    font: bold;
+    font-weight: 700;
+    grid-area: 28px;
+}
+p{
+    color: #555555;
+}
+h1{
+    font: bold;
+    font-size: 750px;
+    
+}
+
+h2{
+    font-size: 40px;
+}
+._button-base{
+    line-height: 20px;
+    gap: 24px;
+}
+.cta-btn{
+    color: white;
+    background-color: #60269E;
+    border-radius: 16px;
+    padding: 10px;
+    font-size: 16px;
+    border-color:#5b21b6;
+    gap: 10px;
+    margin: 10px;
+}
+/*main section*/
+/*Here are a few numbers that we are proud of*/
+/*start below*/
+
+.statistics-section {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.statistics-section h2 {
+    color: #000000; /* Dark purple text color */
+    margin-bottom: 40px;
+    font-size: 45px;
+    font: bold;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: center;
+    gap: 68px; /* Space between stats */
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px; /* Adjust width as needed */
+}
+
+.stat-icon {
+    width: 40px; /* Adjust icon size */
+    height: 40px;
+    margin-bottom: 10px;
+    /* You would use actual image URLs or SVG for these icons */
+}
+
+.stat-number {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    color: #000000; /* Dark purple color */
+}
+
+.stat-description {
+    font-size: 12px;
+    color: #4209a5; /* Grayish text color */
+    margin: 0;
+    text-transform: uppercase;
+}
+
+/* Specific icon colors (approximate from image) */
+.stat-item:nth-child(1) .stat-icon { filter: invert(24%) sepia(85%) saturate(3475%) hue-rotate(222deg) brightness(97%) contrast(97%); } /* Blue */
+.stat-item:nth-child(2) .stat-icon { filter: invert(41%) sepia(74%) saturate(417%) hue-rotate(85deg) brightness(93%) contrast(85%); } /* Green */
+.stat-item:nth-child(3) .stat-icon { filter: invert(66%) sepia(48%) saturate(718%) hue-rotate(345deg) brightness(101%) contrast(97%); } /* Orange */
+.stat-item:nth-child(4) .stat-icon { filter: invert(65%) sepia(21%) saturate(2335%) hue-rotate(265deg) brightness(88%) contrast(96%); } /* Pink/Purple */
+
+/*end above*/
+
+
+
+/*section story start*/
+.story-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 50px;
+    background-color: #ffffff; /* Background color of the section */
+    max-width: 1200px;
+    margin: 40px auto; /* Center the section on the page */
+    
+    color: ssec colorr #0D0B32;
+    font-style: bold;
+    font-size: 42.06px;
+    line-height: 100%;
+   
+}
+
+.story-content {
+    flex: 10px;
+    padding-right: 40px;
+    max-width: 400px;
+    color: #000000; 
+}
+
+.story-content h1 {
+     /* Dark purple color for the heading */
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #000000;
+}
+.blue-text{
+    color: #5b21b6;
+}
+
+.story-content p {
+     /* Dark gray for text */
+    line-height: 1.5;
+    margin-bottom: 15px;
+    color: grey;
+    font-size: large;
+    font-weight: bold;
+}
+
+
+/* Specific styling for the bolded text in the first paragraph, as seen in the image */
+.story-content p strong {
+    color: #4a148c; /* Purple for "Africa" and surrounding text */
+}
+
+.story-image {
+    flex: 1;
+    max-width: 400px;
+}
+
+.story-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Rounded corners for the image */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Responsive adjustment for smaller screens */
+@media (max-width: 768px) {
+    .story-section {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .story-content {
+        padding-right: 0;
+        margin-bottom: 30px;
+        max-width: 100%;
+    }
+
+    .story-image {
+        max-width: 100%;
+    }
+}
+
+/*section story end*/
+
+/*section1 what set us end*/
+
+
+.what-sets-us-apart-section {
+    text-align: center;
+    padding: 60px 20px;
+    position: relative; /* Needed for positioning arrows relative to the section/slider area */
+}
+
+.what-sets-us-apart-section h1 {
+    color: #000000;
+    margin-bottom: 40px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.slider-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Allows arrows to be positioned inside this container */
+    overflow: hidden; /* Hides slides that are off-screen */
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    padding: 40px;
+    max-width: 600px;
+    width: 100%;
+    /* Slider specific CSS */
+    display: none; /* Hide all slides by default */
+    animation: fade 0.5s ease-in-out; /* Add a fade animation */
+}
+
+.active-slide {
+    display: block; /* Only show the active slide */
+}
+
+/* Keyframe animation for a smooth fade effect */
+@keyframes fade {
+    from {opacity: 0.4}
+    to {opacity: 1}
+}
+
+.icon-placeholder {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #4a148c;
+}
+
+.feature-card h2 {
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    color: #616161;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.slider-arrow {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #4a148c;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute; /* Position arrows relative to slider-container */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10; /* Ensure arrows are above the card */
+}
+
+.left-arrow {
+    left: -20px; /* Position slightly outside the main card area */
+}
+
+.right-arrow {
+    right: -20px; /* Position slightly outside the main card area */
+}
+
+.slider-arrow:hover {
+    background-color: #f0f0f0;
+}
+
+/*section 1what set us end*/
+
+
+/*section of person coding start*/
+/* Note: You might want to adjust colors slightly based on precise branding needs */
+:root {
+    --bg-color: #f7f3ff; /* Light background from image */
+    --purple: #4a148c; /* Main accent purple */
+    --text-color: #333333;
+    --light-shape: #e8eaf6; /* Lighter beige/pink abstract shape color */
+}
+
+.community-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 40px;
+    padding: 50px;
+    background-color: #fff; /* White background for the main card area */
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.content-container {
+    flex: 1;
+    padding-right: 50px;
+    max-width: 500px;
+}
+
+.content-container h1 {
+    color: #000000;
+    font-size: 32px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+
+.content-container ul {
+    list-style-type: none; /* Remove default bullets */
+    padding: 0;
+    margin: 0;
+}
+
+.content-container li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 20px;
+    color: var(--text-color);
+    line-height: 1.4;
+    font-size: 15px;
+}
+
+/* Custom bullet points using pseudo-elements */
+.content-container li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--purple);
+    font-size: 20px;
+    line-height: 1;
+}
+
+.content-container li strong {
+    color: #000;
+    font-weight: 700;
+}
+
+.image-container {
+    flex: 1;
+    position: relative;
+    max-width: 400px;
+}
+
+.image-wrapper {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    /* This white background helps the image stand out */
+    background-color: white; 
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px; /* Rounded corners on the image itself */
+}
+
+/* Abstract decorative elements using pseudo-elements */
+
+/* Purple asterisk shape */
+.image-container::before {
+    content: '';
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    width: 80px;
+    height: 80px;
+    background-color: var(--purple);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    transform: rotate(20deg);
+}
+
+/* Light beige/pink abstract shape */
+.image-container::after {
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    left: -30px;
+    width: 100px;
+    height: 60px;
+    background-color: var(--light-shape);
+    border-radius: 10px;
+    transform: rotate(-10deg);
+    opacity: 0.7;
+}
+
+/* Add basic responsiveness */
+@media (max-width: 900px) {
+    .community-section {
+        flex-direction: column;
+        padding: 30px;
+    }
+    .content-container {
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+    .image-container {
+        max-width: 100%;
+    }
+    .image-container::before, .image-container::after {
+        /* Hide complex shapes on mobile for simplicity */
+        display: none; 
+    }
+}
+
+/*section of person coding start*/
+
+
+
+
+.sect,.pp{
+    text-align: center;
+    text-transform: capitalize; 
+    font-size: 10em;
+    font: 45px bold; 
+    padding: 40px;
+}
+
+
+/*Layout for mentor*/
+.layout {
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+  background: #f1f5f9;
+  min-height: 200px;
+}
+
+.sidebar {
+  /* Add flex: 0 0 200px */
+  background: #1e293b;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 200px;
+}
+
+.content {
+  /* Add flex: 1 to grow */
+  background: #3b82f6;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 0 0 200px;
+}
+
+.aside1 {
+  /* Add flex: 0 0 150px */
+  background: #10b981;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 200px;
+}
+.aside {
+  /* Add flex: 0 0 150px */
+  background: #10b981;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 200px;
+}
+
+h4 {
+  margin: 0 0 10px;
+}
+
+p {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+
+
+.community-section {
+    display: flex;
+    flex-wrap: wrap; /* Allows columns to stack on smaller screens */
+    background-color: #fff;
+    max-width: 1000px;
+    margin: 20px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+    
+    
+}
+
+.text-content, .image-placeholder {
+    flex: 1;
+    min-width: 400px; /* Ensures content doesn't get too narrow */
+    padding: 40px;
+    height: auto 20px;
+    width: 50px;
+}
+
+h1 {
+    color: black; /* Deep purple for the main title */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none; /* Remove default bullet points */
+    padding: 0;
+}
+
+li {
+    margin-bottom: 25px;
+    padding-left: 30px;
+    position: relative;
+    line-height: 1.4;
+    color: black;
+}
+
+/* Custom bullet point using CSS pseudo-element for the checkmark effect */
+li::before {
+    content: "•"; /* Using a simple bullet or a custom icon font/SVG */
+    color: black; /* A lighter purple for the icon */
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: -5px;
+}
+
+strong {
+    color: #4a148c;
+}
+
+.image-placeholder img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustment for smaller screens */
+@media (max-width: 768px) {
+    .community-section {
+        flex-direction: column; /* Stack the text and image vertically */
+        padding: 20px;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+
+
+
+
+
+/*our team start*/
+/* Note: Using a standard sans-serif font, though a specific Google Font may match better */
+
+.mentors-section {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.header-content {
+    max-width: 600px;
+    margin: 0 auto 50px auto;
+}
+
+.header-content h1 {
+    color: #000;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.header-content p {
+    color: #616161;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.mentors-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Space between the cards */
+    flex-wrap: wrap; /* Allows the cards to wrap on smaller screens */
+}
+
+.mentor-card {
+    background-color: #fff; /* White background for each card */
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    flex-basis: 220px; /* Base width for cards */
+    flex-grow: 1; 
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.mentor-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures image covers the space without stretching */
+    margin-bottom: 20px;
+    border: 3px solid #f7f3ff; /* Subtle border matching background color */
+}
+
+.mentor-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    margin: 0 0 5px 0;
+}
+
+.mentor-title {
+    font-size: 13px;
+    color: #4a148c; /* Purple color for title */
+    margin: 0 0 15px 0;
+}
+
+.mentor-description {
+    font-size: 12px;
+    color: #616161;
+    line-height: 1.4;
+    margin: 0 0 20px 0;
+}
+
+.social-links a {
+    color: #a0a0a0; /* Muted color for icons */
+    font-size: 16px;
+    margin: 0 5px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #4a148c; /* Purple hover effect */
+}
+
+/*our team end*/
+/*footer start*/
+/* Define custom properties for easier color management */
+:root {
+    --footer-bg: #10151f; /* Main dark background color */
+    --text-light: #f4f4f4; /* Light text color */
+    --text-muted: #a0a0a0; /* Muted gray text color */
+    --divider-color: #333; /* Color of the horizontal line */
+    --logo-color: #673ab7; /* Purple color for logo area */
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background-color: var(--footer-bg);
+    color: var(--text-light);
+    padding: 40px 60px 20px 60px; /* Top, Right, Bottom, Left padding */
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding-bottom: 40px;
+}
+
+.footer-brand {
+    flex-basis: 300px; /* Control width of the brand column */
+}
+
+.logo-placeholder {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--logo-color);
+    margin-bottom: 10px;
+}
+
+.footer-brand p {
+    color: var(--text-muted);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer-links-group {
+    /* flex-grow allows columns to share remaining space equally */
+    flex-grow: 1; 
+    max-width: 150px;
+}
+
+.footer-links-group h3 {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: var(--text-light);
+    font-weight: bold;
+}
+
+.footer-links-group ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links-group li {
+    margin-bottom: 10px;
+}
+
+.footer-links-group a {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+    list-style: none;
+}
+
+.footer-links-group a:hover {
+    color: var(--text-light); /* Hover effect for links */
+}
+
+.footer-divider {
+    border: none;
+    border-top: 1px solid var(--divider-color);
+    margin: 0;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+.footer-social-icons a {
+    color: var(--text-muted);
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.footer-social-icons a:hover {
+    color: var(--text-light);
+}
+
+/* Basic responsiveness for mobile screens */
+@media (max-width: 768px) {
+    footer {
+        padding: 30px 20px;
+    }
+    .footer-top {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .footer-brand {
+        flex-basis: auto;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    .footer-social-icons {
+        margin-left: 0;
+    }
+    .footer-social-icons a {
+        margin: 0 10px;
+    }
+}
+
+/*footer end*/
+
+
+/* Color variables based on the image */
+:root {
+    --bg-dark: #10151f;
+    --text-muted: #a0a0a0;
+    --text-light: #f4f4f4;
+    --logo-purple: #673ab7;
+    --divider-color: #333;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background-color: var(--bg-dark);
+    padding: 60px 80px 40px 80px; /* Adjust padding as needed for screen size */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: flex-start; /* Aligns items to the start, creating space on the right */
+    gap: 100px; /* Adjust spacing between columns */
+    padding-bottom: 40px;
+}
+
+/* Base style for all list items and links */
+.footer-links ul, 
+.footer-social ul, 
+.footer-legal ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links a, 
+.footer-social a, 
+.footer-legal a {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 2; /* Matches the vertical spacing in the image */
+    transition: color 0.3s;
+}
+
+.footer-links a:hover, 
+.footer-social a:hover, 
+.footer-legal a:hover {
+    color: var(--text-light);
+}
+
+/* Column Headings (Links, Social, Legal) */
+.footer-links h3, 
+.footer-social h3, 
+.footer-legal h3 {
+    color: var(--text-light);
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px; /* Space between heading and first link */
+}
+
+/* Brand Section (Logo and Description) */
+.footer-brand {
+    /* Set a specific width for the first column */
+    flex-basis: 300px; 
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.logo-icon {
+    width: 24px;
+    height: 24px;
+    background-color: var(--logo-purple); /* Placeholder for the actual logo image/SVG */
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.logo-container span {
+    color: var(--text-light);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer-brand p {
+    color: var(--text-muted);
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Divider line style */
+.footer-divider {
+    border: none;
+    border-top: 1px solid var(--divider-color);
+    margin: 0;
+    opacity: 0.8;
+}
+
+/* Add basic responsiveness */
+@media (max-width: 850px) {
+    footer {
+        padding: 40px 40px 20px 40px;
+    }
+    .footer-container {
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    .footer-brand {
+        flex-basis: 100%;
+    }
+}
+
+
+
+.growth{
+    background-color: #4209a5;
+    justify-content: center;
+    padding: 40px;
+   
+}
+.itc{
+    align-items: center;
+}
