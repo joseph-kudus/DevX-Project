@@ -13,10 +13,10 @@
 }
 /* Color variables based on the image */
 :root {
-    --bg-dark: #10151f;
+    --bg-dark: #000000;
     --text-muted: #a0a0a0;
     --text-light: #f4f4f4;
-    --logo-purple: #673ab7;
+    --logo-purple: #60269E;
     --divider-color: #333;
 }
 body {
@@ -29,10 +29,14 @@ body {
     height: 100vh;
     display: block;
 }
+<<<<<<< HEAD
+/*changes to the header start*/
+=======
 
 
 /*header re*/
 
+>>>>>>> origin/master
 .site-header {
     background-color: #f5eeff; /* Light purple background */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
@@ -67,7 +71,11 @@ body {
 }
 
 .nav-links a:hover {
+<<<<<<< HEAD
+    color: #000000;
+=======
     color: #000;
+>>>>>>> origin/master
 }
 
 .sign-in {
@@ -78,7 +86,11 @@ body {
 }
 
 .sign-up-btn {
+<<<<<<< HEAD
+    background-color: #6c2bd9; /* The purple button color */
+=======
     background-color: #60269E; /* The purple button color */
+>>>>>>> origin/master
     color: #fff;
     padding: 10px 20px;
     border-radius: 5px;
@@ -90,6 +102,58 @@ body {
 .sign-up-btn:hover {
     background-color: #5a24b3;
 }
+<<<<<<< HEAD
+
+/* --- Responsive Design (Mobile First) --- */
+
+.menu-toggle, .hamburger {
+    display: none; /* Hide hamburger and checkbox by default on desktop */
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+        padding: 10px 20px;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        font-size: 1.5rem;
+        color: #666;
+    }
+
+    .nav-links, .auth-buttons {
+        flex-direction: column;
+        width: 100%;
+        display: none; /* Hide links by default on mobile */
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .nav-links a, .auth-buttons a {
+        margin: 10px 0;
+    }
+    
+    .sign-in {
+        margin-right: 0;
+    }
+
+    /* Show menu when checkbox is checked */
+    .menu-toggle:checked ~ .nav-links,
+    .menu-toggle:checked ~ .auth-buttons {
+        display: flex;
+    }
+
+    .auth-buttons {
+        border-top: 1px solid #ddd;
+        padding-top: 10px;
+    }
+}
+
+/*changes to the header end*/
+=======
+>>>>>>> origin/master
 
 /* --- Responsive Design (Mobile First) --- */
 
