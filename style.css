@@ -29,14 +29,14 @@ body {
     height: 100vh;
     display: block;
 }
-<<<<<<< HEAD
+
 /*changes to the header start*/
-=======
+
 
 
 /*header re*/
 
->>>>>>> origin/master
+
 .site-header {
     background-color: #f5eeff; /* Light purple background */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
@@ -71,11 +71,11 @@ body {
 }
 
 .nav-links a:hover {
-<<<<<<< HEAD
+
     color: #000000;
-=======
+
     color: #000;
->>>>>>> origin/master
+
 }
 
 .sign-in {
@@ -86,11 +86,7 @@ body {
 }
 
 .sign-up-btn {
-<<<<<<< HEAD
-    background-color: #6c2bd9; /* The purple button color */
-=======
-    background-color: #60269E; /* The purple button color */
->>>>>>> origin/master
+
     color: #fff;
     padding: 10px 20px;
     border-radius: 5px;
@@ -102,7 +98,7 @@ body {
 .sign-up-btn:hover {
     background-color: #5a24b3;
 }
-<<<<<<< HEAD
+
 
 /* --- Responsive Design (Mobile First) --- */
 
@@ -152,8 +148,6 @@ body {
 }
 
 /*changes to the header end*/
-=======
->>>>>>> origin/master
 
 /* --- Responsive Design (Mobile First) --- */
 
