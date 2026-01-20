@@ -196,6 +196,7 @@ h2{
 .statistics-section {
     text-align: center;
     padding: 60px 20px;
+    background-color: #f5eeff;
 }
 
 .statistics-section h2 {
@@ -249,8 +250,6 @@ h2{
 .stat-item:nth-child(4) .stat-icon { filter: invert(65%) sepia(21%) saturate(2335%) hue-rotate(265deg) brightness(88%) contrast(96%); } /* Pink/Purple */
 
 /*end above*/
-
-
 
 /*section story start*/
 .story-section {
@@ -337,6 +336,7 @@ h2{
 
 
 .what-sets-us-apart-section {
+    background-color: #f5eeff;
     text-align: center;
     padding: 60px 20px;
     position: relative; /* Needed for positioning arrows relative to the section/slider area */
@@ -574,11 +574,7 @@ h2{
 }
 
 /*section of person coding start*/
-
-
-
-
-.sect,.pp{
+.sect .pp{
     text-align: center;
     text-transform: capitalize; 
     font-size: 10em;
@@ -717,8 +713,6 @@ strong .kh{
     }
 }
 
-
-
 /*our team start*/
 /* Note: Using a standard sans-serif font, though a specific Google Font may match better */
 
@@ -834,7 +828,9 @@ strong .kh{
 
 /* Define custom properties for easier color management */
 
-
+.article{
+    background-color: #f5eeff;
+}
 
 
 .growth{
@@ -849,19 +845,12 @@ strong .kh{
 
 /*footer start*/
 footer{
-    display: flex;
-    flex: 1;
-    padding: 40px 40px 20px 40px;
-    margin: 10px;
+    display: block;
+    padding: 25px 25px 10px 20px;
+    margin: 10 auto;
     background-color: #1a1f3c;
 }
-.footer-cotainer{
-    display: block;
-    flex-wrap: wrap;
-    gap: 40px;
-    
 
-}
 .logo-footer{
     width: 24px;
     height: 24px;
@@ -877,21 +866,25 @@ footer{
     gap: 50px;
 }
 .brand-links{
-   color: #e8eaf6;
-    
+    color: #e8eaf6;
+    list-style: none;
 }
 
-ul li a{
+ul{
     color: #e8eaf6;
     font: bold;
     font-size: 15px;
     font-family: PT sans-serif;
     display: inline-block;
-    list-style-type: none;
     text-decoration: none;
     gap: 15px;
 }
 
+a{
+    color: #f5eeff;
+    list-style: none;
+    
+}
 
 .footer-links h1,
 .social-links h1,
@@ -913,16 +906,20 @@ ul li a{
     justify-content: center;
     align-items: center;  
     text-align: end;
-
 }
 
-.footer-text p{
+.footer-text{
     float: right;
 }
-ul .social-icons-l {
-    list-style-type: none;
+.social-icons-l li a{
+    list-style: none;
     margin: 0;
     padding: 0;
     
 }
 
+ul li a{
+    list-style: none;
+    align-items: flex-start;
+    text-overflow: var(--light-shape);
+}
