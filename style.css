@@ -32,8 +32,10 @@ body {
 /*header re*/
 
 .site-header {
-    background-color: #eadcf9; /* Light purple background */
+    background-color: #F8F3FD; /* Light purple background */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    width: 1,920px;
+    height: 100px;
 }
 
 .navbar {
@@ -221,13 +223,17 @@ h2{
 
 .statistics-section {
     text-align: center;
-    padding: 60px 20px;
-	Background:#eadcf9;
+    top: 937px;
+    padding-top: 55px;
+    padding-right: 225px;
+    padding-left: 225px;
+    padding-bottom: 93px;
+	Background:#F7F0FF;
+    gap: 23px;
 }
 
 .statistics-section h2 {
-    color: #000000; /* black text color */
-    margin-bottom: 10px;
+    color: #0D0B32; /* black text color */
     font-size: 45px;
     font: bold;
     line-height: 100%;
@@ -243,9 +249,10 @@ h2{
 
 .stat-item {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    
     width: 150px; /* Adjust width as needed */
+    gap: 18px;
 }
 
 .stat-icon {
