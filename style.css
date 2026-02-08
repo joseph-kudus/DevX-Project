@@ -473,7 +473,7 @@ article{
     padding-right: 10px;
     padding-bottom: 0px;
     margin-bottom: 20px;
-    letter-spacing: 1;
+    letter-spacing: 1%;
     font-size: 15px;
     color: rgb(46, 41, 41);
     font-display: block;
@@ -488,8 +488,8 @@ article{
     left: 10;
     top: 0;
     color: black;
-    font-size: 20px;
-    line-height: 1;
+    font-size: 30px;
+    line-height: 2;
     
 }
 
@@ -631,17 +631,24 @@ p {
 }
 
 .community-section {
-    display: flex;
+    display: flexbox;
     flex-wrap: wrap; /* Allows columns to stack on smaller screens */
-    background-color: #fff;
-    max-width: 1000px;
-    margin: 20px;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+    background-color:whitesmoke;
+    max-width: 950px;
+    max-height: 800px;
+    margin: 30px auto;
+    padding: 60px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Subtle shadow */
     
 }
-
+.content-container{
+    margin: 10px;
+    padding: 20px;
+    font-size: 36px;
+    font-family: arial;
+    font: bold;
+}
 .text-content, .image-placeholder {
     flex: 1;
     min-width: 400px; /* Ensures content doesn't get too narrow */
@@ -809,38 +816,30 @@ strong .kh{
 }
 
 /*our team end*/
-
-/* Define custom properties for easier color management */
-
 .growth12{
     background-color: #60269E;
-    justify-content: right;
-    margin: 10px;
-	margin: 30px;
+    justify-content: center;
+    padding-top: 20px;
 	Color: White;
 }
-.loremm{
-	
+.lor{
+	display: block;
+    color: rgb(136, 51, 51);
 	padding: 20px;
 	line-height:8px;
 	
 	flex: 1;
 }
 .sts-wrapper{
-
-	
-    
     padding: 0 auto;
-    margin: 0 120px 0
+    margin: 0 120px 0;
+    display: block;
+    align-items: center;
+    
 }
 .itc{
-    
-	
-    
     padding: 0 auto;
     margin: 0 120px 0
-	
-	
 }
 
 /*footer start*/
@@ -923,5 +922,8 @@ ul .social-icons-l {
     margin: 0;
     padding: 0;
     
+    
 }
+
+
 
