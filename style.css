@@ -29,8 +29,6 @@ body {
     height: 100vh;
     display: block;
 }
-
-
 /*header re*/
 
 .site-header {
@@ -60,6 +58,7 @@ body {
 
 .nav-links a {
     color: #666;
+    font-family: Nunito;
     text-decoration: none;
     margin: 0 12px;
     font-size: 0.9rem;
@@ -152,6 +151,7 @@ main{
     margin: 0px;
 }
 .welcome-text{
+    font-family: PT Sans;
     background-color: #60269E;
     border-radius: 16px;
     border-width: 1px;
@@ -160,6 +160,26 @@ main{
     font-family: PT sans-serif;
     letter-spacing: 0%;
     padding: 10px; 
+}
+.def{
+    font-weight: 700;
+    font-family: PT Sans;
+    font-size: 75px;
+    font-style: bold;
+    line-height: 73px;
+    letter-spacing: 0%;
+    align-content: center;
+    color: #0D0B32;
+}
+.def1{
+    font-weight: 400;
+    font-family: PT Sans;
+    font-size: 24px;
+    font-style: Regular;
+    line-height: 100%;
+    letter-spacing: 0%;
+    align-content: center;
+    color: #555555;
 }
 .container h1 p{
     font-size: 75px;
