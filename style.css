@@ -862,28 +862,25 @@ strong .kh{
     margin: 10px;
 	margin: 30px;
 	Color: White;
+    top: 3683px;
+    width: 1,506px;
+    height: 525px;
+    border-radius: 30px;
 }
 .loremm{
-	
+	color: #FFF;
 	padding: 20px;
 	line-height:8px;
-	
 	flex: 1;
 }
 .sts-wrapper{
 
-	
-    
     padding: 0 auto;
     margin: 0 120px 0
 }
 .itc{
-    
-	
-    
     padding: 0 auto;
     margin: 0 120px 0
-	
 	
 }
 
@@ -900,9 +897,7 @@ strong .kh{
 	gap: 1px;
 	 flex-direction: row;
 	justify-content: space-evenly;
-	
-	
-	
+
 }
 @media screen and (max-width: 768px) {
   .container-footer{
