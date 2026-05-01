@@ -1,41 +1,45 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Akhbar;
-    color: #000000;
 }
 
-@media screen and (min-width: 480px)and (max-width: 768px)  {
-  body {
-    background-color: lightgreen;
-  }
-}
-/* Color variables based on the image */
 :root {
     --bg-dark: #10151f;
     --text-muted: #a0a0a0;
     --text-light: #f4f4f4;
-    --logo-purple: #673ab7;
+    --logo-purple: #60269E;
     --divider-color: #333;
+    --bg-light: #F8F3FD;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: Akhbar;
-    background-color: #fff; /* Light purple background color */
+    font-family: 'PT Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff;
     margin: 0;
     padding: 0;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    display: block;
+    color: #000000;
+    line-height: 1.6;
 }
-/*header re*/
 
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    body {
+        background-color: lightgreen;
+    }
+}
+
+/*header*/
 .site-header {
-    background-color: #F8F3FD; /* Light purple background */
+    background-color: var(--bg-light);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-    width: 1,920px;
-    height: 100px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .navbar {
@@ -60,7 +64,7 @@ body {
 
 .nav-links a {
     color: #666;
-    font-family: Nunito;
+    font-family: 'Nunito', sans-serif;
     text-decoration: none;
     margin: 0 12px;
     font-size: 0.9rem;
@@ -79,7 +83,7 @@ body {
 }
 
 .sign-up-btn {
-    background-color: #60269E; /* The purple button color */
+    background-color: var(--logo-purple);
     color: #fff;
     padding: 10px 20px;
     border-radius: 5px;
@@ -92,10 +96,8 @@ body {
     background-color: #5a24b3;
 }
 
-/* --- Responsive Design (Mobile First) --- */
-
 .menu-toggle, .hamburger {
-    display: none; /* Hide hamburger and checkbox by default on desktop */
+    display: none;
 }
 
 @media (max-width: 768px) {
@@ -103,231 +105,185 @@ body {
         flex-wrap: wrap;
         padding: 10px 20px;
     }
-
     .hamburger {
         display: block;
         cursor: pointer;
         font-size: 1.5rem;
         color: #a0a0a0;
     }
-
     .nav-links, .auth-buttons {
         flex-direction: column;
         width: 100%;
-        display: none; /* Hide links by default on mobile */
+        display: none;
         text-align: center;
         margin-top: 10px;
     }
-
     .nav-links a, .auth-buttons a {
         margin: 10px 0;
     }
-    
     .sign-in {
         margin-right: 0;
     }
-
-    /* Show menu when checkbox is checked */
     .menu-toggle:checked ~ .nav-links,
     .menu-toggle:checked ~ .auth-buttons {
         display: flex;
     }
-
     .auth-buttons {
         border-top: 1px solid #ddd;
         padding-top: 10px;
     }
 }
 
-/*header re*/
-
-
-/* --- Navigation Bar  end--- */
-main{
-	align-content:Center;
-	
-}
-.hero-section{
+/*main*/
+main {
     text-align: center;
-    padding: 120px;
-    margin: 0px;
 }
-.welcome-text{
-    font-family: PT Sans;
-    background-color: #60269E;
+
+.hero-section {
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.welcome-text {
+    font-family: 'PT Sans', sans-serif;
+    background-color: white;
     border-radius: 16px;
-    border-width: 1px;
-    background: white;
-    border-color: #60269E;
-    font-family: PT sans-serif;
-    letter-spacing: 0%;
-    padding: 10px; 
+    border: 1px solid var(--logo-purple);
+    color: var(--logo-purple);
+    padding: 10px 16px;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
 }
-.def{
+
+.def {
     font-weight: 700;
-    font-family: PT Sans;
+    font-family: 'PT Sans', sans-serif;
     font-size: 75px;
-    font-style: bold;
     line-height: 73px;
-    letter-spacing: 0%;
-    align-content: center;
     color: #0D0B32;
+    margin: 20px 0;
 }
-.def1{
+
+.def1 {
     font-weight: 400;
-    font-family: PT Sans;
+    font-family: 'PT Sans', sans-serif;
     font-size: 24px;
-    font-style: Regular;
-    line-height: 100%;
-    letter-spacing: 0%;
-    align-content: center;
+    line-height: 1.4;
     color: #555555;
-}
-.container h1 p{
-    font-size: 75px;
-    font: bold;
-    font-weight: 700;
-    grid-area: 28px;
-}
-p{
-    color: #555555;
-}
-h1{
-	font-family: Akhbar;
-    font: bold;
-    font-size: 48px;
-	Color: red;
-    
+    margin: 20px 0 30px;
 }
 
-h2{
-    font-size: 40px;
-}
-._button-base{
-    line-height: 20px;
-    gap: 24px;
-}
-.cta-btn{
+.cta-btn {
     color: white;
-    background-color: #60269E;
+    background-color: var(--logo-purple);
     border-radius: 16px;
-    padding: 10px;
+    padding: 14px 28px;
     font-size: 16px;
-    border-color:#5b21b6;
-    gap: 10px;
-    margin: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
-/*main section*/
 
-/*start below*/
+.cta-btn:hover {
+    background-color: #5a24b3;
+}
 
+/*statistics*/
 .statistics-section {
     text-align: center;
-    top: 937px;
-    padding-top: 55px;
-    padding-right: 225px;
-    padding-left: 225px;
-    padding-bottom: 93px;
-	Background:#F7F0FF;
-    gap: 23px;
+    padding: 55px 20px 93px;
+    background: #F7F0FF;
 }
 
 .statistics-section h2 {
-    color: #0D0B32; /* black text color */
+    color: #0D0B32;
     font-size: 45px;
-    font: bold;
-    line-height: 100%;
-    letter-spacing: 0%;
+    font-weight: bold;
+    line-height: 1.2;
     text-align: center;
+    margin-bottom: 40px;
 }
 
 .stats-container {
     display: flex;
     justify-content: center;
-    gap: 68px; /* Space between stats */
+    gap: 68px;
+    flex-wrap: wrap;
 }
 
 .stat-item {
     display: flex;
-    flex-direction: row;
-    
-    width: 150px; /* Adjust width as needed */
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
     gap: 18px;
 }
+
 .stat-icon {
-    width: 40px; /* Adjust icon size */
+    width: 40px;
     height: 40px;
     margin-bottom: 10px;
-    /* You would use actual image URLs or SVG for these icons */
 }
 
 .stat-number {
     font-size: 24px;
     font-weight: bold;
     margin: 0;
-    color: #000000; /* Dark purple color */
+    color: #000000;
 }
 
 .stat-description {
     font-size: 12px;
-    color: #4209a5; /* Grayish text color */
+    color: #4209a5;
     margin: 0;
     text-transform: uppercase;
 }
 
-/* Specific icon colors (approximate from image) */
-.stat-item:nth-child(1) .stat-icon { filter: invert(24%) sepia(85%) saturate(3475%) hue-rotate(222deg) brightness(97%) contrast(97%); } /* Blue */
-.stat-item:nth-child(2) .stat-icon { filter: invert(41%) sepia(74%) saturate(417%) hue-rotate(85deg) brightness(93%) contrast(85%); } /* Green */
-.stat-item:nth-child(3) .stat-icon { filter: invert(66%) sepia(48%) saturate(718%) hue-rotate(345deg) brightness(101%) contrast(97%); } /* Orange */
-.stat-item:nth-child(4) .stat-icon { filter: invert(65%) sepia(21%) saturate(2335%) hue-rotate(265deg) brightness(88%) contrast(96%); } /* Pink/Purple */
-
-/*end above*/
-
-/*section story start*/
+/*story section*/
 .story-section {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 80px 50px;
-    background-color: #ffffff; /* Background color of the section */
+    background-color: #ffffff;
     max-width: 1200px;
-    margin: 40px auto; /* Center the section on the page */
-    
-    color: ssec colorr #0D0B32;
-    font-style: bold;
-    font-size: 42.06px;
-    line-height: 100%;
+    margin: 40px auto;
+    gap: 60px;
 }
+
 .story-content {
-    flex: 10px;
+    flex: 1;
     padding-right: 40px;
     max-width: 400px;
-    color: #000000; 
+    color: #000000;
 }
 
 .story-content h1 {
-     /* Dark purple color for the heading */
     font-size: 32px;
     margin-bottom: 20px;
     color: #000000;
 }
-.blue-text{
+
+.story-content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.blue-text {
     color: #5b21b6;
 }
 
 .story-content p {
-     /* Dark gray for text */
     line-height: 1.5;
     margin-bottom: 15px;
     color: grey;
-    font-size: large;
-    font-weight: bold;
+    font-size: 16px;
 }
 
-
-/* Specific styling for the bolded text in the first paragraph, as seen in the image */
 .story-content p strong {
-    color: #4a148c; /* Purple for "Africa" and surrounding text */
+    color: #4a148c;
 }
 
 .story-image {
@@ -338,39 +294,39 @@ h2{
 .story-image img {
     width: 100%;
     height: auto;
-    border-radius: 10px; /* Rounded corners for the image */
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/* Responsive adjustment for smaller screens */
 @media (max-width: 768px) {
     .story-section {
         flex-direction: column;
         padding: 40px 20px;
     }
-
     .story-content {
         padding-right: 0;
         margin-bottom: 30px;
         max-width: 100%;
     }
-
-    .story-image {
-        max-width: 100%;
+    .def {
+        font-size: 40px;
+        line-height: 1.2;
+    }
+    .def1 {
+        font-size: 18px;
     }
 }
 
-/*section story end*/
-article{
-	background-color: #eadcf9;
+/*what sets us apart*/
+article {
+    background-color: #eadcf9;
 }
 
-/*section1 what set us end*/
 .what-sets-us-apart-section {
     text-align: center;
     padding: 60px 20px;
-    position: relative; /* Needed for positioning arrows relative to the section/slider area */
-	border-radius:10px;
+    position: relative;
+    border-radius: 10px;
 }
 
 .what-sets-us-apart-section h1 {
@@ -381,14 +337,10 @@ article{
 }
 
 .slider-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative; /* Allows arrows to be positioned inside this container */
-    overflow: hidden; /* Hides slides that are off-screen */
+    position: relative;
     max-width: 700px;
     margin: 0 auto;
-	Background:#eadcf9;
+    background: #eadcf9;
 }
 
 .feature-card {
@@ -398,16 +350,14 @@ article{
     padding: 40px;
     max-width: 600px;
     width: 100%;
-    /* Slider specific CSS */
-    display: none; /* Hide all slides by default */
-    animation: fade 0.5s ease-in-out; /* Add a fade animation */
+    display: none;
+    animation: fade 0.5s ease-in-out;
 }
 
 .active-slide {
-    display: block; /* Only show the active slide */
+    display: block;
 }
 
-/* Keyframe animation for a smooth fade effect */
 @keyframes fade {
     from {opacity: 0.4}
     to {opacity: 1}
@@ -446,47 +396,40 @@ article{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute; /* Position arrows relative to slider-container */
+    position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 10; /* Ensure arrows are above the card */
+    z-index: 10;
 }
 
 .left-arrow {
-    left: -20px; /* Position slightly outside the main card area */
+    left: -20px;
 }
 
 .right-arrow {
-    right: -20px; /* Position slightly outside the main card area */
+    right: -20px;
 }
 
 .slider-arrow:hover {
     background-color: #f0f0f0;
 }
 
-/*section 1what set us end*/
-
-
-/*section of person coding start*/
-/* Note: You might want to adjust colors slightly based on precise branding needs */
-:root {
-    --bg-color: #f7f3ff; /* Light background from image */
-    --purple: #6e19d7; /* Main accent purple */
-    --text-color: #d93232;
-    --light-shape: #d55dd1; /* Lighter beige/pink abstract shape color */
-}
-
+/*community section*/
 .community-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-    
+    background-color: #fff;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    gap: 60px;
 }
 
 .content-container {
-    flex: 5;
-    padding-right: 100px;
+    flex: 1;
     max-width: 500px;
 }
 
@@ -498,41 +441,33 @@ article{
 }
 
 .content-container ul {
-    list-style-type: none; /* Remove default bullets */
+    list-style-type: none;
     padding: 0;
-    margin: 0;    
+    margin: 0;
 }
 
 .content-container li {
     position: relative;
-    padding-left: 15px;
-    padding-right: 10px;
-    padding-bottom: 0px;
+    padding-left: 25px;
     margin-bottom: 20px;
-    letter-spacing: 1;
     font-size: 15px;
     color: rgb(46, 41, 41);
-    font-display: block;
-    align-items: flex-start;
-    gap: 10px;
+    line-height: 1.4;
 }
 
-/* Custom bullet points using pseudo-elements */
 .content-container li::before {
     content: '•';
     position: absolute;
-    left: 10;
+    left: 0;
     top: 0;
-    color: black;
+    color: var(--logo-purple);
     font-size: 20px;
     line-height: 1;
-    
 }
 
 .content-container li strong {
     color: #000000;
     font-weight: 700;
-    font: bold;
 }
 
 .image-container {
@@ -545,211 +480,72 @@ article{
     position: relative;
     border-radius: 10px;
     overflow: hidden;
-    /* This white background helps the image stand out */
-    background-color: white; 
+    background-color: white;
 }
 
 .image-wrapper img {
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 10px; /* Rounded corners on the image itself */
-}
-
-/* Abstract decorative elements using pseudo-elements */
-
-/* Purple asterisk shape */
-.image-container::before {
-    content: '';
-    position: absolute;
-    top: -40px;
-    right: -40px;
-    width: 80px;
-    height: 80px;
-    background-color: var(--logo-purple);
-    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
- 
-    
-}
-
-/* Light beige/pink abstract shape */
-.image-container::after {
-    content: '';
-    position: absolute;
-    bottom: -30px;
-    left: -50px;
-    width: 100px;
-    height: 60px;
-    background-color: var(--divider-color);
     border-radius: 10px;
-    transform: rotate(-10deg);
-    opacity: 0.7;
 }
 
-/* Add basic responsiveness */
 @media (max-width: 900px) {
     .community-section {
         flex-direction: column;
-        padding: 30px;
-    }
-    .content-container {
-        padding-right: 0;
-        margin-bottom: 40px;
-    }
-    .image-container {
-        max-width: 100%;
-    }
-    .image-container::before, .image-container::after {
-        /* Hide complex shapes on mobile for simplicity */
-        display: none; 
+        padding: 30px 20px;
     }
 }
 
-/*section of person coding start*/
-
-
-
-
-.sect,.pp{
-    text-align: center;
-    text-transform: capitalize; 
-    font-size: 10em;
-    font: 45px bold; 
-    padding: 40px;
-}
-
-
-/*Layout for mentor*/
-.layout {
-  display: flex;
-  gap: 30px;
-  padding: 20px;
-  background: #f1f5f9;
-  min-height: 200px;
-}
-
-.sidebar {
-  /* Add flex: 0 0 200px */
-  background: #1e293b;
-  color: white;
-  padding: 20px;
-  border-radius: 8px;
-  flex: 200px;
-}
-
-.content {
-  /* Add flex: 1 to grow */
-  background: #3b82f6;
-  color: white;
-  padding: 20px;
-  border-radius: 8px;
-  flex: 0 0 200px;
-}
-
-.aside1 {
-  /* Add flex: 0 0 150px */
-  background: #10b981;
-  color: white;
-  padding: 20px;
-  border-radius: 8px;
-  flex: 200px;
-}
-.aside {
-  /* Add flex: 0 0 150px */
-  
-  color: white;
-  padding: 20px;
-  border-radius: 8px;
-  flex: 200px;
-}
-
-h4 {
-  margin: 0 0 10px;
-}
-
-p {
-  margin: 0;
-  font-size: 14px;
-  opacity: 0.9;
-}
-
-.community-section {
+/*growth section*/
+.growth12 {
+    background-color: var(--logo-purple);
     display: flex;
-    flex-wrap: wrap; /* Allows columns to stack on smaller screens */
-    background-color: #fff;
-    max-width: 1000px;
-    margin: 20px;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* Subtle shadow */
-    
-    
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px;
+    color: white;
+    padding: 60px 40px;
+    border-radius: 30px;
 }
 
-.text-content, .image-placeholder {
+.loremm {
+    color: #FFF;
+    padding: 20px;
     flex: 1;
-    min-width: 400px; /* Ensures content doesn't get too narrow */
-    padding: 40px;
-    height: auto 20px;
-    width: 50px;
 }
 
-h1 {
-    color: black; /* Deep purple for the main title */
-    font-size: 2.5rem;
+.loremm h1 {
+    color: white;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.loremm p {
+    color: #e8eaf6;
     margin-bottom: 20px;
 }
 
-ul {
-    list-style: none; /* Remove default bullet points */
-    padding: 0;
-}
-
-li {
-    margin-bottom: 25px;
-    padding-left: 30px;
-    position: relative;
-    line-height: 1.4;
-    
-}
-
-/* Custom bullet point using CSS pseudo-element for the checkmark effect */
-li::before {
-    content: "•"; /* Using a simple bullet or a custom icon font/SVG */
-    color: black; /* A lighter purple for the icon */
-    font-size: 1.5rem;
-    position: absolute;
-    left: 0;
-    top: -5px;
-}
-
-strong .kh{
-    color: #151318;
-    background: #000;
-}
-
-.image-placeholder img {
-    max-width: 100%;
-    height: auto;
+.loremm button {
+    background: white;
+    color: var(--logo-purple);
+    border: none;
+    padding: 12px 24px;
     border-radius: 8px;
-    display: block;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    font-weight: 600;
+    cursor: pointer;
 }
 
-/* Responsive adjustment for smaller screens */
-@media (max-width: 768px) {
-    .community-section {
-        flex-direction: column; /* Stack the text and image vertically */
-        padding: 20px;
-    }
-    h1 {
-        font-size: 2rem;
-    }
+.sts-wrapper {
+    flex: 1;
 }
 
-/*our team start*/
-/* Note: Using a standard sans-serif font, though a specific Google Font may match better */
+.sts-wrapper img {
+    max-width: 100%;
+    width: 100%;
+}
 
+/*mentors section*/
 .mentors-section {
     text-align: center;
     padding: 60px 20px;
@@ -775,19 +571,17 @@ strong .kh{
 .mentors-container {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Space between the cards */
-    flex-wrap: wrap; /* Allows the cards to wrap on smaller screens */
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .mentor-card {
-    background-color: #fff; /* White background for each card */
-    padding: 3px;
+    background-color: #fff;
+    padding: 30px 20px;
     border-radius: 10px;
-    border-width: 2px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    flex-basis: 20px; /* Base width for cards */
-    flex-grow: 1; 
-    max-width: 180px;
+    flex-basis: 200px;
+    max-width: 220px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -797,10 +591,10 @@ strong .kh{
 .mentor-photo {
     width: 80px;
     height: 80px;
-    border-radius: 50%; /* Makes the image circular */
-    object-fit: cover; /* Ensures image covers the space without stretching */
+    border-radius: 50%;
+    object-fit: cover;
     margin-bottom: 20px;
-    border: 3px solid #f7f3ff; /* Subtle border matching background color */
+    border: 3px solid #f7f3ff;
 }
 
 .mentor-name {
@@ -812,7 +606,7 @@ strong .kh{
 
 .mentor-title {
     font-size: 13px;
-    color: #4a148c; /* Purple color for title */
+    color: #4a148c;
     margin: 0 0 15px 0;
 }
 
@@ -823,102 +617,100 @@ strong .kh{
     margin: 0 0 20px 0;
 }
 
-.social-links
-.fa {
-  padding: 5px;
-  font-size: 5px;
-  width: 20px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px auto;
-  border-radius: 10px;
-  
-}
-
-.fa:hover {
-    opacity: 0.7;
+.social-links .fab {
+    padding: 8px;
+    font-size: 16px;
+    width: 32px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 5px;
+    border-radius: 6px;
+    color: white;
 }
 
 .fa-twitter {
-  background: #4d4e4e;
-  color: white;
+    background: #4d4e4e;
 }
+
 .fa-linkedin {
-  background: #474848;
-  color: white;
+    background: #474848;
 }
 
 .social-links a:hover {
-    color: #626065; /* Purple hover effect */
+    opacity: 0.7;
 }
 
-/*our team end*/
-
-/* Define custom properties for easier color management */
-
-.growth12{
-    background-color: #60269E;
-    justify-content: right;
-    margin: 10px;
-	margin: 30px;
-	Color: White;
-    top: 3683px;
-    width: 1,506px;
-    height: 525px;
-    border-radius: 30px;
-}
-.loremm{
-	color: #FFF;
-	padding: 20px;
-	line-height:8px;
-	flex: 1;
-}
-.sts-wrapper{
-
-    padding: 0 auto;
-    margin: 0 120px 0
-}
-.itc{
-    padding: 0 auto;
-    margin: 0 120px 0
-	
-}
-
-/*footer start*/
-@media screen and (max-width: 768px) {
-  .footer-section{
+/*footer*/
+.container-footer {
+    display: flex;
     flex-wrap: wrap;
-  }
+    gap: 60px;
+    padding: 60px 40px 20px;
+    background-color: #1a1f3c;
+    color: #e8eaf6;
 }
-.container-footer{
-	display: flex;
-	background: #1a1f3c;
-	color: white;
-	gap: 1px;
-	 flex-direction: row;
-	justify-content: space-evenly;
 
+.container-footer .logo {
+    flex: 1 1 300px;
 }
+
+.container-footer .logo img {
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+.container-footer .logo p {
+    color: #a0a0a0;
+    font-size: 14px;
+    max-width: 300px;
+}
+
+.container-footer .links,
+.container-footer .social-links,
+.container-footer .legal-links {
+    flex: 1 1 150px;
+}
+
+.container-footer h3 {
+    color: var(--text-light);
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.container-footer ul {
+    list-style: none;
+}
+
+.container-footer ul li {
+    margin-bottom: 10px;
+}
+
+.container-footer ul li a {
+    color: #a0a0a0;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.container-footer ul li a:hover {
+    color: #ffffff;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 40px auto;
+    max-width: 1200px;
+}
+
 @media screen and (max-width: 768px) {
-  .container-footer{
-    flex-wrap: wrap;
-  }
-}
-.footer-logo{
-	
-	align-items: center;
-	align-items: flex-start;
-}
-.links{
-	
-	
-	
-}
-ul, li a{
-	text-align: left;
-	list-style: none;
-	text-decoration: none;
-	color: white;
-	align-items: flex-start;
-	
+    .container-footer {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .growth12 {
+        flex-direction: column;
+        text-align: center;
+    }
 }

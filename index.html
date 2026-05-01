@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevX Project</title>
-    <link rel="stylesheet" href="cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <!--header section start-->
     <header class="site-header">
         <nav class="navbar">
             <div class="logo"><strong>DEVX</strong></div>
@@ -19,246 +19,231 @@
                 <i class="fas fa-bars"></i>
             </label>
             <div class="nav-links">
-                <a href="#Home">Home</a>
-                <a href="#Our Programs">Our Programs</a>
-                <a href="#Why TPU">Why TPU</a>
-                <a href="#Community">Community</a>
-                <a href="#Contact Us">Contact Us</a>
-                <a href="#Faqs">FAQs</a>
+                <a href="#home">Home</a>
+                <a href="#our-programs">Our Programs</a>
+                <a href="#why-tpu">Why TPU</a>
+                <a href="#community">Community</a>
+                <a href="#contact">Contact Us</a>
+                <a href="#faqs">FAQs</a>
             </div>
-
             <div class="auth-buttons">
-                <a href="#Sign in" class="sign-in">Sign In</a>
-                <a href="#Sign Up" class="sign-up-btn">Sign Up</a>
+                <a href="#sign-in" class="sign-in">Sign In</a>
+                <a href="#sign-up" class="sign-up-btn">Sign Up</a>
             </div>
         </nav>
     </header>
-    <!--header section end-->
-    
+
     <main>
-         <section class="hero-section">
+        <section class="hero-section" id="home">
             <div class="container">
-                <div><button class="welcome-text">Welcome to Devx</button></div>
+                <div><span class="welcome-text">Welcome to Devx</span></div>
                 <h1 class="def">Defining your future Starts <br> With growing your skills</h1>
-                <p class="def1">The go to place where developers gets discovered by employers. Your <br> best developer hub.</p>
+                <p class="def1">The go-to place where developers get discovered by employers. Your <br> best developer hub.</p>
                 <div>
-                <button type="button" class="cta-btn">Get Started Now</button>
+                    <button type="button" class="cta-btn">Get Started Now</button>
                 </div>
-                
+            </div>
+        </section>
+
+        <section class="statistics-section" id="our-programs">
+            <h2>Here are a few numbers that we are proud of</h2>
+            <div class="stats-container">
+                <div class="stat-item">
+                    <img src="assets/Duotone/Trophy.png" alt="Trophy Icon" class="stat-icon">
+                    <p class="stat-number">17+</p>
+                    <p class="stat-description">AWARDS REWARDED</p>
+                </div>
+                <div class="stat-item">
+                    <img src="assets/Duotone/Users.png" alt="Teachers Icon" class="stat-icon">
+                    <p class="stat-number">20+</p>
+                    <p class="stat-description">TEACHERS</p>
+                </div>
+                <div class="stat-item">
+                    <img src="assets/Duotone/Smiley.png" alt="Smiley Icon" class="stat-icon">
+                    <p class="stat-number">13000+</p>
+                    <p class="stat-description">SUCCESSFUL MEMBERS</p>
+                </div>
+                <div class="stat-item">
+                    <img src="assets/Duotone/Briefcase.png" alt="Briefcase Icon" class="stat-icon">
+                    <p class="stat-number">315+</p>
+                    <p class="stat-description">COMPLETED PROJECT</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="story-section" id="why-tpu">
+            <div class="story-content">
+                <h1>Our Story</h1>
+                <h2>We’re a Tech hub for aspiring and established developers across <span class="blue-text">Africa.</span></h2>
+                <p>We stand out by providing a community where opportunity meets preparation, and setup our members for absolute success.
+                We also foster supportive and collaborative growth sessions
+                for developers to connect and grow together.</p>
+            </div>
+            <div class="story-image">
+                <img src="assets/Image.png" alt="Students in a tech hub">
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="what-sets-us-apart-section">
+            <h1>What Sets Us Apart</h1>
+            <div class="slider-container">
+                <div class="feature-card slide active-slide">
+                    <div class="card-content">
+                        <div class="icon-placeholder">🎓</div>
+                        <h2>1. Project-Based Learning:</h2>
+                        <p>Our commitment to providing well thought out projects for our aspiring developers to build is what makes the mark. We ensure that our learners have access to top-notch educational content without the financial burden.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card slide">
+                    <div class="card-content">
+                        <div class="icon-placeholder">🧑‍💻</div>
+                        <h2>2. Collaborative Growth:</h2>
+                        <p>We foster a supportive community with growth sessions for developers to connect, share knowledge, and grow together, building a strong network.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card slide">
+                    <div class="card-content">
+                        <div class="icon-placeholder">📜</div>
+                        <h2>3. Certification & Mentorship:</h2>
+                        <p>Earn industry-recognized certifications and receive expert mentorship from established professionals to guide your career path.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card slide">
+                    <div class="card-content">
+                        <div class="icon-placeholder">💼</div>
+                        <h2>4. Job Placement Support:</h2>
+                        <p>We provide comprehensive job placement assistance, helping you connect with leading tech companies and land your dream role.</p>
+                    </div>
+                </div>
+
+                <button class="slider-arrow left-arrow" onclick="changeSlide(-1)" aria-label="Previous Slide">&lt;</button>
+                <button class="slider-arrow right-arrow" onclick="changeSlide(1)" aria-label="Next Slide">&gt;</button>
+            </div>
+        </section>
+
+        <section class="community-section" id="community">
+            <div class="content-container">
+                <h1>Join Our Thriving Developer Community</h1>
+                <ul>
+                    <li><strong>Shared Knowledge:</strong> Benefit from the collective <br>wisdom of our community. Ask questions, seek advice, and contribute your expertise to a supportive environment.</li>
+                    <li><strong>Collaborative Projects:</strong> Find collaborators for your projects, participate in hackathons, and engage in hands-on experiences that go beyond theoretical learning.</li>
+                    <li><strong>Networking Opportunities:</strong> Connect with experienced developers, industry experts, and potential collaborators. Networking is a key ingredient in a successful career, and DevX provides the platform for meaningful connections.</li>
+                </ul>
+            </div>
+            <div class="image-container">
+                <div class="image-wrapper">
+                    <img src="assets/image 306.png" alt="Person coding on a laptop and phone">
+                </div>
+            </div>
+        </section>
+
+        <section class="growth12">
+            <div class="loremm">
+                <h1>Grow your career, start learning with DevX</h1>
+                <p>Start your journey today with industry-relevant courses</p>
+                <button>Our Courses</button>
+            </div>
+            <div class="sts-wrapper">
+                <img class="itc" src="assets/Group 39531.png" alt="Student learning illustration">
+            </div>
+        </section>
+
+        <section class="mentors-section">
+            <div class="header-content">
+                <h1>Meet Our Mentors</h1>
+                <p>In DevX, instructors from all over the world instruct millions of students. We offer the knowledge and abilities.</p>
+            </div>
+            <div class="mentors-container">
+                <div class="mentor-card">
+                    <img src="assets/frame 11.JPG" alt="ATO Bradley" class="mentor-photo">
+                    <h2 class="mentor-name">ATO Bradley</h2>
+                    <p class="mentor-title">Creator of DevX</p>
+                    <p class="mentor-description">Former co-founder of <br> Opendoor. Early staff <br>at Spotify and Clearbit.</p>
+                    <div class="social-links">
+                        <a href="#" class="fab fa-twitter" aria-label="Twitter"></a>
+                        <a href="#" class="fab fa-linkedin" aria-label="LinkedIn"></a>
+                    </div>
+                </div>
+                <div class="mentor-card">
+                    <img src="assets/frame12.JPG" alt="Florian Lowe" class="mentor-photo">
+                    <h2 class="mentor-name">Florian Lowe</h2>
+                    <p class="mentor-title">Developer</p>
+                    <p class="mentor-description">Lead engineering teams at <br>Figma, Pitch, and Protocol <br> Labs.</p>
+                    <div class="social-links">
+                        <a href="#" class="fab fa-twitter" aria-label="Twitter"></a>
+                        <a href="#" class="fab fa-linkedin" aria-label="LinkedIn"></a>
+                    </div>
+                </div>
+                <div class="mentor-card">
+                    <img src="assets/frame13.JPG" alt="Paul Kamdoum Nji" class="mentor-photo">
+                    <h2 class="mentor-name">Paul Kamdoum Nji</h2>
+                    <p class="mentor-title">UI/UX Designer</p>
+                    <p class="mentor-description">Full Stack Developer, <br> Full stack developer</p>
+                    <div class="social-links">
+                        <a href="#" class="fab fa-twitter" aria-label="Twitter"></a>
+                        <a href="#" class="fab fa-linkedin" aria-label="LinkedIn"></a>
+                    </div>
+                </div>
+                <div class="mentor-card">
+                    <img src="assets/frame14.JPG" alt="Marvin McKinney" class="mentor-photo">
+                    <h2 class="mentor-name">Marvin McKinney</h2>
+                    <p class="mentor-title">Backend Developer</p>
+                    <p class="mentor-description">Former frontend dev for Linear, Coinbase, and <br> Postscript.</p>
+                    <div class="social-links">
+                        <a href="#" class="fab fa-twitter" aria-label="Twitter"></a>
+                        <a href="#" class="fab fa-linkedin" aria-label="LinkedIn"></a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
-     <section class="statistics-section">
-    <h2>Here are a few numbers that we are proud of</h2>
-    <div class="stats-container">
-        <div class="stat-item">
-            <img src="assets/Duotone/Trophy.png" alt="Trophy Icon" class="stat-icon">
-            <p class="stat-number">17+</p>
-            <p class="stat-description">AWARDS REWARDED</p>
-        </div>
-        <div class="stat-item">
-            <img src="assets/Duotone/Users.png" alt="Teachers Icon" class="stat-icon">
-            <p class="stat-number">20+</p>
-            <p class="stat-description">TEACHERS</p>
-        </div>
-        <div class="stat-item">
-            <img src="assets/Duotone/Smiley.png" alt="Smiley Icon" class="stat-icon">
-            <p class="stat-number">13000+</p>
-            <p class="stat-description">SUCCESSFUL MEMBERS</p>
-        </div>
-        <div class="stat-item">
-            <img src="assets/Duotone/Briefcase.png" alt="Briefcase Icon" class="stat-icon">
-            <p class="stat-number">315+</p>
-            <p class="stat-description">COMPLETED PROJECT</p>
-        </div>
-    </div>
-    </section>
-  
-    <section class="story-section">
-    <div class="story-content">
-        <h1>Our Story</h1>
-        <h2>We’re a Tech hub for aspiring and established developers across <span class="blue-text">Africa.</span></h2>
-        <p>We stand out by providing a community where opportunity meets preparation, and setup our members for absolute success.
-        We also foster supportive and collaborative growth sessions 
-        for developers to connect and grow together.</p>
-    </div>
-    <div class="story-image">
-        <!-- Placeholder for the image in the design -->
-        <img src="assets/Image.png" alt="Students in a tech hub">
-    </div>
-    </section>
-	<div><hr></div>
-	
-	
-     <section class="what-sets-us-apart-section">
-    <h1>What Sets Us Apart</h1>
-    <div class="slider-container">
-        
-        <!-- Individual Slides -->
-        <div class="feature-card slide active-slide">
-            <div class="card-content">
-                <div class="icon-placeholder">🎓</div> 
-                <h2>1. Project-Based Learning:</h2>
-                <p>Our commitment to providing well thought out project for our aspiring developers to build is what makes the mark, we ensure that our learners have access to top-notch educational content without the financial burden.</p>
-            </div>
-        </div>
 
-        <div class="feature-card slide">
-            <div class="card-content">
-                <div class="icon-placeholder">🧑‍💻</div> 
-                <h2>2. Collaborative Growth:</h2>
-                <p>We foster a supportive community with growth sessions for developers to connect, share knowledge, and grow together, building a strong network.</p>
-            </div>
+    <footer class="container-footer" id="contact">
+        <div class="logo">
+            <img src="assets/logo.png" alt="DevX logo">
+            <p>Top learning experience that creates more talents in the world.</p>
         </div>
-
-        <div class="feature-card slide">
-            <div class="card-content">
-                <div class="icon-placeholder">📜</div> 
-                <h2>3. Certification & Mentorship:</h2>
-                <p>Earn industry-recognized certifications and receive expert mentorship from established professionals to guide your career path.</p>
-            </div>
+        <div class="links">
+            <h3>Links</h3>
+            <ul>
+                <li><a href="#why-tpu">About Us</a></li>
+                <li><a href="#our-programs">Program</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#faqs" id="faqs">FAQs</a></li>
+            </ul>
         </div>
-
-        <div class="feature-card slide">
-            <div class="card-content">
-                <div class="icon-placeholder">💼</div> 
-                <h2>4. Job Placement Support:</h2>
-                <p>We provide comprehensive job placement assistance, helping you connect with leading tech companies and land your dream role.</p>
-            </div>
+        <div class="social-links">
+            <h3>Social</h3>
+            <ul>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">Facebook</a></li>
+            </ul>
         </div>
-
-        <!-- Navigation Buttons -->
-        <button class="slider-arrow left-arrow" onclick="changeSlide(-1)" aria-label="Previous Slide">&lt;</button>
-        <button class="slider-arrow right-arrow" onclick="changeSlide(1)" aria-label="Next Slide">&gt;</button>
-    </div>
-</section>
-
-	<article class="article-section">
-    <section class="community-section">
-    <div class="content-container">
-        <h1>Join Our Thriving Developer Community</h1>
-        <ul>
-            <li>
-                <strong class="kh">Shared Knowledge:</strong> Benefit from the collective <br>wisdom of our community. Ask questions, seek advice, and contribute your expertise to a supportive environment.
-            </li>
-            <li>
-                <strong>Collaborative Projects:</strong> Find collaborators for your projects, participate in hackathons, and engage in hands-on experiences that go beyond theoretical learning.
-            </li>
-            <li>
-                <strong>Networking Opportunities:</strong> Connect with experienced developers, industry experts, and potential collaborators. Networking is a key ingredient in a successful career, and OrraLearn provides the platform for meaningful connections.
-            </li>
-        </ul>
-    </div>
-    <div class="image-container">
-        <!-- The purple decorative shape is done purely with CSS background/pseudo-elements -->
-        <div class="image-wrapper">
-            <!-- Placeholder for the main image -->
-            <img src="assets/image 306.png" alt="Person coding on a laptop and phone">
+        <div class="legal-links">
+            <h3>Legal</h3>
+            <ul>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Privacy</a></li>
+            </ul>
         </div>
-    </div>
-</section>
-    
-    <section class="growth12">
-	<div class="loremm">
-	<h1>Grow your career start, learning With OrraLearn</h1>
-	<p>lorem sum</p>
-	<button>Our Courses</button>
-	</div>
-		<div class="sts-wrapper">
-		<img class="itc" src="assets/Group 39531.png" alt="immm">
-		</div>
-    </section>
+    </footer>
 
-   <section class="mentors-section">
-    <div class="header-content">
-        <h1>Meet Our Mentors</h1>
-        <p>In DevX, instructors from all over the world instruct millions of students. We offer the knowledge and abilities.</p>
-    </div>
-    
-    <div class="mentors-container">
-        <!-- Mentor Card 1: ATO Bradley -->
-        <div class="mentor-card">
-            <!-- Image placeholder (replace src with actual image paths) -->
-            <img src="assets/frame 11.JPG" alt="ATO Bradley" class="mentor-photo">
-            <h2 class="mentor-name">ATO Bradley</h2>
-            <p class="mentor-title">Creator of DevX</p>
-            <p class="mentor-description">Former co-founder of <br> Opendoor. Early staff <br>at Spotify and Clearbit.</p>
-            <div class="social-links">
-                <!-- Placeholders for icons (replace with actual SVG/FontAwesome icons) -->
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-linkedin"></a>
-            </div>
-        </div>
-
-        <!-- Mentor Card 2: Florian Lowe -->
-        <div class="mentor-card">
-            <img src="assets/frame12.JPG" alt="Florian Lowe" class="mentor-photo">
-            <h2 class="mentor-name">Florian Lowe</h2>
-            <p class="mentor-title">Developer</p>
-            <p class="mentor-description">Lead engineering teams at <br>Figma, Pitch, and Protocol <br> Labs.</p>
-            <div class="social-links">
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-linkedin"></a>
-            </div>
-        </div>
-
-        <!-- Mentor Card 3: Paul Kamdoum Nji -->
-        <div class="mentor-card">
-            <img src="assets/frame13.JPG" alt="Paul Kamdoum Nji" class="mentor-photo">
-            <h2 class="mentor-name">Paul Kamdoum Nji</h2>
-            <p class="mentor-title">UIUX Designer</p>
-            <p class="mentor-description">Full Stack Developer, Full <br> stack developer</p>
-            <div class="social-links">
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-linkedin"></a>
-            </div>
-        </div>
-
-        <!-- Mentor Card 4: Marvin McKinney -->
-        <div class="mentor-card">
-            <img src="assets/frame14.JPG" alt="Marvin McKinney" class="mentor-photo">
-            <h2 class="mentor-name">Marvin McKinney</h2>
-            <p class="mentor-title">Backend Developer</p>
-            <p class="mentor-description">Former frontend dev for Linear, Coinbase, and <br> Postscript.</p>
-            <div class="social-links">
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-linkedin"></a>
-            </div>
-        </div>
-    </div>
-</section>
-</article>
-<!-- Footer start-->
- <footer class="container-footer">
-		<div class="logo"><img src="" alt="img">logo
-		<p>Top learning expreience that create more talents in the world.</p>
-		</div>
-		<div class="links">
-		<h3>link</h3>
-			<ul>
-				<li><a href="#">About Us</a></li>
-				<li><a href="#">Program</a></li>
-				<li><a href="#">Contact</a></li>
-				<li><a href="#">Faqs</a></li>
-			</ul>
-		</div>
-		
-		<div class="social-links">
-		<h3>Social</h3>
-			<ul>
-				<li><a href="#">Twiter</a></li>
-				<li><a href="#">Linkedin</a></li>
-				<li><a href="#">Facebook</a></li>
-			</ul>
-		</div>
-		
-		<div class="social-links">
-		<h3>Legal</h3>
-			<ul>
-				<li><a href="#">Terms</a></li>
-				<li><a href="#">Privacy</a></li>
-			</ul>
-		</div>
-	</footer>
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        function showSlide(n) {
+            slides.forEach(slide => slide.classList.remove('active-slide'));
+            currentSlide = (n + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active-slide');
+        }
+        function changeSlide(n) { showSlide(currentSlide + n); }
+        document.addEventListener('DOMContentLoaded', () => showSlide(0));
+    </script>
 </body>
 </html>
